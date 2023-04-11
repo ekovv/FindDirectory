@@ -6,6 +6,8 @@ import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.Option;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Objects;
 
@@ -15,13 +17,11 @@ public class Finder {
     private boolean recursive;
 
     @Option(name = "-d", metaVar = "directory")
-    private String directory = Paths.get("").toAbsolutePath().toString();
+    private String directory;
 
     @Argument(required = true, metaVar = "nameFile")
     private String nameFile;
 
-    public Finder() {
-    }
 
 
     public void parser(String[] args) {
@@ -44,28 +44,29 @@ public class Finder {
         return path;
     }
 
-
     public String find(String dir) {
         File directory = new File(dir);
         File[] files = directory.listFiles();
         if (files == null) return null;
         for (File fileEntry : files) {
             if (fileEntry == null) continue;
-//            path = path.resolve(fileEntry.getAbsolutePath());
+            String path = Path.of(dir).resolve(fileEntry.getName()).toString();
             if (fileEntry.isDirectory() && getRecursive()) {
-                return find(dir + "/" + fileEntry.getName());
+                String recursiveCall = find(path);
+                if (Objects.nonNull(recursiveCall) && !recursiveCall.isEmpty()) return recursiveCall;
             }
-            if (getNameFile().equals(fileEntry.getName())) return dir + "/" + fileEntry.getName();
+            if (getNameFile().equals(fileEntry.getName())) return path;
         }
-        return ""; // выбросить исключение
+        return null;
     }
+
 
     public boolean getRecursive() {
         return recursive;
     }
 
     public String getDirectory() {
-        return directory;
+        return Objects.isNull(directory) ? Paths.get("").toAbsolutePath().toString() : directory;
     }
 
     public String getNameFile() {
