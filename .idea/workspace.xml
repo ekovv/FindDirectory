@@ -99,7 +99,7 @@
       <recent name="com.ekov" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Finder">
+  <component name="RunManager" selected="Gradle.FinderTest.doMain">
     <configuration name="Finder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ekov.Finder" />
       <module name="FindDirectory.main" />

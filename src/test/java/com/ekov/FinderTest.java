@@ -2,14 +2,13 @@ package com.ekov;
 
 import org.junit.jupiter.api.Test;
 
-import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class FinderTest {
 
     @Test
-    public void doMain() throws IOException {
+    public void doMain() {
         Finder finder1 = new Finder();
         assertEquals("testFiles/test1File", finder1.doMain(new String[] {"-d", "testFiles", "test1File"}));
         Finder finder2 = new Finder();

@@ -6,7 +6,6 @@ import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.Option;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Objects;
@@ -23,7 +22,6 @@ public class Finder {
     private String nameFile;
 
 
-
     public void parser(String[] args) {
         CmdLineParser parser = new CmdLineParser(this);
         try {
@@ -32,6 +30,7 @@ public class Finder {
             throw new RuntimeException(e);
         }
     }
+
 
     public static void main(String[] args) {
         new Finder().doMain(args);
@@ -71,29 +70,6 @@ public class Finder {
 
     public String getNameFile() {
         return nameFile;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Finder finder = (Finder) o;
-        return recursive == finder.recursive &&
-                Objects.equals(directory, finder.directory) && Objects.equals(nameFile, finder.nameFile);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(recursive, directory, nameFile);
-    }
-
-    @Override
-    public String toString() {
-        return "Finder{" +
-                "recursive=" + recursive +
-                ", directory='" + directory + '\'' +
-                ", nameFile='" + nameFile + '\'' +
-                '}';
     }
 }
 
