@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2a03300-9da7-4426-9b8c-f56243963a80" name="Changes" comment="finder done with 1 test">
-      <change afterPath="$PROJECT_DIR$/testFiles/notThisDir/notThisFile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testFiles/test1File" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testFiles/test2Directory/neTotFile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testFiles/test2Directory/test2File" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testFiles/test2Directory/test3Directory/echeOdinLevuiFile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testFiles/test2Directory/test3Directory/levuiFile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testFiles/test2Directory/test3Directory/test3File" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="b2a03300-9da7-4426-9b8c-f56243963a80" name="Changes" comment="finder done with tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ekov/Finder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ekov/Finder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ekov/FinderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ekov/FinderTest.java" afterDir="false" />
@@ -99,11 +91,11 @@
       <recent name="com.ekov" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FinderTest.doMain">
+  <component name="RunManager" selected="Application.Finder">
     <configuration name="Finder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ekov.Finder" />
       <module name="FindDirectory.main" />
-      <option name="PROGRAM_PARAMETERS" value="-r -d testFiles test3File" />
+      <option name="PROGRAM_PARAMETERS" value="-r -d testFiles ahsdfkaskfaf" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ekov.*" />
@@ -240,7 +232,11 @@
       <workItem from="1681075765464" duration="68000" />
       <workItem from="1681127903389" duration="3715000" />
       <workItem from="1681158345617" duration="713000" />
-      <workItem from="1681193338954" duration="788000" />
+      <workItem from="1681193338954" duration="1640000" />
+      <workItem from="1681238003243" duration="33000" />
+      <workItem from="1681238042398" duration="340000" />
+      <workItem from="1681238392736" duration="3132000" />
+      <workItem from="1681319352798" duration="1294000" />
     </task>
     <task id="LOCAL-00001" summary="finder done with 1 test">
       <created>1681060645479</created>
@@ -256,7 +252,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681060696600</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finder done with tests">
+      <created>1681194179474</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681194179474</updated>
+    </task>
+    <task id="LOCAL-00004" summary="finder done with tests">
+      <created>1681194323086</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681194323086</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +274,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finder done with 1 test" />
-    <option name="LAST_COMMIT_MESSAGE" value="finder done with 1 test" />
+    <MESSAGE value="finder done with tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="finder done with tests" />
   </component>
 </project>

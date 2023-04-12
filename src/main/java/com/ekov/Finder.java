@@ -38,9 +38,7 @@ public class Finder {
 
     public String doMain(String[] args) {
         parser(args);
-        String path = find(getDirectory());
-        System.out.println(path);
-        return path;
+        return find(getDirectory());
     }
 
     public String find(String dir) {
