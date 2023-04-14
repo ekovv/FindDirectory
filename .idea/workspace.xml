@@ -7,7 +7,6 @@
     <list default="true" id="b2a03300-9da7-4426-9b8c-f56243963a80" name="Changes" comment="finder done with tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ekov/Finder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ekov/Finder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ekov/FinderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ekov/FinderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,23 +65,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -95,7 +95,7 @@
     <configuration name="Finder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ekov.Finder" />
       <module name="FindDirectory.main" />
-      <option name="PROGRAM_PARAMETERS" value="-r -d testFiles ahsdfkaskfaf" />
+      <option name="PROGRAM_PARAMETERS" value="-r -d testFiles test3File" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ekov.*" />
@@ -211,11 +211,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.FinderTest.doMain" />
         <item itemvalue="Gradle.FinderTest.main" />
         <item itemvalue="Gradle.FinderTest.find" />
-        <item itemvalue="Application.Finder" />
+        <item itemvalue="Gradle.FinderTest.doMain" />
         <item itemvalue="Gradle.FinderTest" />
+        <item itemvalue="Application.Finder" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +236,12 @@
       <workItem from="1681238003243" duration="33000" />
       <workItem from="1681238042398" duration="340000" />
       <workItem from="1681238392736" duration="3132000" />
-      <workItem from="1681319352798" duration="1294000" />
+      <workItem from="1681319352798" duration="1320000" />
+      <workItem from="1681380793123" duration="6171000" />
+      <workItem from="1681398282969" duration="722000" />
+      <workItem from="1681406469002" duration="1296000" />
+      <workItem from="1681412608249" duration="7564000" />
+      <workItem from="1681463076430" duration="1605000" />
     </task>
     <task id="LOCAL-00001" summary="finder done with 1 test">
       <created>1681060645479</created>
@@ -266,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681194323086</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finder done with tests">
+      <created>1681334358695</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681334358695</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

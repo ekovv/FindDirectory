@@ -22,7 +22,7 @@ public class Finder {
     private String nameFile;
 
 
-    public void parser(String[] args) {
+    private void parser(String[] args) {
         CmdLineParser parser = new CmdLineParser(this);
         try {
             parser.parseArgument(args);
@@ -38,10 +38,11 @@ public class Finder {
 
     public String doMain(String[] args) {
         parser(args);
+        System.out.println(find(getDirectory()));
         return find(getDirectory());
     }
 
-    public String find(String dir) {
+    private String find(String dir) {
         File directory = new File(dir);
         File[] files = directory.listFiles();
         if (files == null) return null;
@@ -70,4 +71,3 @@ public class Finder {
         return nameFile;
     }
 }
-
